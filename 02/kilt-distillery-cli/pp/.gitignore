@@ -5,7 +5,6 @@
 /.pnp
 .pnp.js
 /utils/encryptionKey.json
-.env
 
 # testing
 /coverage
