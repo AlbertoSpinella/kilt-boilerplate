@@ -36,14 +36,14 @@ yarn start
 
 ### <a name="step2"></a>2. Add Sporran Extension and import credential
 
-The following instructions comes from [this link](https://hackmd.io/@dTGKTsAWSxi6eYV5aeFnXA/BkzbzlBu5) (section `Sporran Wallet (5 min)`).
+A chunk of the following instructions comes from [this link](https://hackmd.io/@dTGKTsAWSxi6eYV5aeFnXA/BkzbzlBu5) (section `Sporran Wallet (5 min)`).
 - Run the following commands:
 ```bash
 cd ../03-sporran-extension
 yarn install && yarn dev
 ```
  - Import the extension, depending on your browser:
- 
+
 <details><summary>Chrome</summary>
 <ul>
 <li>Visit <code>chrome://extensions</code></li>
