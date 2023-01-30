@@ -4,13 +4,13 @@ This repo intends to create and run a working boilerplate for logging in using K
 
 ## Index
 
-1. Create secrets through distillery
-2. Add Sporran extension and import credential
-3. Run NextJS project
+1. [Create secrets through distillery](#step1)
+2. [Add Sporran extension and import credential](#step2)
+3. [Run NextJS project](#step3)
 
 ## Steps
 
-### 1. Create secrets through distillery
+### <a name="step1"></a>1. Create secrets through distillery
 
 - Run the following commands:
 ```bash
@@ -34,7 +34,7 @@ yarn start
 - Finally, press any key to continue and then select `exit`.
 - Now there should be two folders inside the `02-kilt-distillery-cli` folder: `my_app` and `claimer-credentials`.
 
-### 2. Add Sporran Extension and import credential
+### <a name="step2"></a>2. Add Sporran Extension and import credential
 
 The following instructions comes from [this link](https://hackmd.io/@dTGKTsAWSxi6eYV5aeFnXA/BkzbzlBu5) (section `Sporran Wallet (5 min)`).
 - Run the following commands:
@@ -66,7 +66,7 @@ yarn install && yarn dev
 - Once this is done, click on `Show credentials` and then `Import credentials`. Select the file `./02-kilt-distillery-cli/claimer-credentials/peregrine email.json`.
 
 
-### 3. Run NextJS project
+### <a name="step3"></a>3. Run NextJS project
 
 - Now run the following commands:
 ```bash
