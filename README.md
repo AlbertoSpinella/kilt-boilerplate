@@ -1,4 +1,4 @@
-# KILT boilerplate
+# KILT boilerplate [WIP]
 
 This repo intends to create and run a working boilerplate for logging in using KILT credentials.
 
