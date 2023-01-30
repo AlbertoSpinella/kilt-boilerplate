@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GenericError should render children when no error happens 1`] = `
+<div>
+  <span>
+    Pass
+  </span>
+</div>
+`;
+
+exports[`GenericError should render generic error when an error happens 1`] = `
+<div>
+  <main>
+    <dialog
+      class="overlay"
+    >
+      <p
+        class="text"
+      >
+        An error occurred; please try again. For help please contact  
+        <a
+          href="mailto:tech-support@sporran.org"
+        >
+          tech-support@sporran.org
+        </a>
+         and send over the following text in full.
+      </p>
+      <textarea
+        aria-label="Error details"
+        class="details"
+        readonly=""
+      >
+        Sporran@2023.1.23
+
+Testing GenericError
+
+test.js@123:12
+      </textarea>
+      <button
+        class="button"
+        type="button"
+      >
+        Close
+      </button>
+    </dialog>
+  </main>
+</div>
+`;

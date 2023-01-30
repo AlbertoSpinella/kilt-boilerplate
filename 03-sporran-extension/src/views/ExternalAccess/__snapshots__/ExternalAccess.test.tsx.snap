@@ -1,0 +1,100 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ExternalAccess should render 1`] = `
+<div>
+  <section
+    class="container"
+  >
+    <h1
+      class="heading"
+    >
+      Website Access
+    </h1>
+    <p
+      class="subline"
+    >
+      Control which websites can access your Identity names and addresses
+    </p>
+    <small
+      class="small"
+    >
+      Website access
+    </small>
+    <ul
+      class="list"
+    >
+      <li>
+        <label
+          class="label"
+        >
+          <span
+            class="host"
+          >
+            example.com
+          </span>
+          <span
+            aria-hidden="true"
+            class="denied"
+          >
+            denied
+          </span>
+          <input
+            class="toggle"
+            name="example.com"
+            type="checkbox"
+          />
+          <span />
+          <span
+            aria-hidden="true"
+            class="allowed"
+          >
+            allowed
+          </span>
+        </label>
+      </li>
+      <li>
+        <label
+          class="label"
+        >
+          <span
+            class="host"
+          >
+            example.org
+          </span>
+          <span
+            aria-hidden="true"
+            class="denied"
+          >
+            denied
+          </span>
+          <input
+            checked=""
+            class="toggle"
+            name="example.org"
+            type="checkbox"
+          />
+          <span />
+          <span
+            aria-hidden="true"
+            class="allowed"
+          >
+            allowed
+          </span>
+        </label>
+      </li>
+    </ul>
+    <a
+      class="back"
+      href="/"
+    >
+      Back to My Identities
+    </a>
+    <button
+      aria-label="Back"
+      class="linkBack"
+      title="Back"
+      type="button"
+    />
+  </section>
+</div>
+`;

@@ -1,0 +1,20 @@
+.overlay {
+  composes: overlay from '../../components/Overlay/Overlay.module.css';
+}
+
+.overlay::backdrop,
+.overlay + :global(.backdrop) {
+  opacity: 0;
+}
+
+.heading {
+  composes: heading from '../../components/Overlay/Overlay.module.css';
+}
+
+.text {
+  composes: text from '../../components/Overlay/Overlay.module.css';
+}
+
+.button {
+  composes: button from '../../components/Overlay/Overlay.module.css';
+}

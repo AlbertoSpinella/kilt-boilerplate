@@ -1,0 +1,18 @@
+.icon {
+  composes: buttonIcon from './Button.module.css';
+  background-image: url('../images/plus-circle.svg');
+  width: 2rem;
+  height: 2rem;
+}
+
+.wide {
+  composes: buttonWide from './Button.module.css';
+
+  --wide-button-icon: url('../../components/images/subscan-logo.svg');
+}
+
+.triangleNew {
+  composes: buttonNew from './Button.module.css';
+
+  --wide-button-icon: url('../../components/images/manage-did.svg');
+}

@@ -1,0 +1,235 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Settings menu should be visible when menu button clicked 1`] = `
+<div>
+  <div
+    class="wrapper"
+  >
+    <button
+      aria-expanded="true"
+      aria-haspopup="true"
+      aria-label="Settings"
+      class="toggle"
+      role="button"
+      tabindex="0"
+      title="Settings"
+      type="button"
+    />
+    <div
+      class="dropdown"
+      role="menu"
+    >
+      <h4
+        class="heading"
+      >
+        Settings
+      </h4>
+      <ul
+        class="list"
+      >
+        <li
+          class="listItem"
+        >
+          <a
+            href="/identity/4tDjyLy2gESkLzvaLnpbn7N61VgnwAhqnTHsPPFAwaZjGwP1/remove"
+            role="menuitem"
+            tabindex="-1"
+          >
+            Remove Current Identity
+          </a>
+        </li>
+        <li
+          class="listItem"
+        >
+          <a
+            href="/identity/4tDjyLy2gESkLzvaLnpbn7N61VgnwAhqnTHsPPFAwaZjGwP1/reset"
+            role="menuitem"
+            tabindex="-1"
+          >
+            Reset Password for Current Identity
+          </a>
+        </li>
+        <li
+          class="disabled"
+        >
+          <button
+            class="listButton"
+            disabled=""
+            type="button"
+          >
+            Require Password for Future Transactions
+          </button>
+        </li>
+        <li
+          class="listItem"
+        >
+          <a
+            href="https://www.sporran.org/terms"
+            rel="noreferrer"
+            role="menuitem"
+            tabindex="-1"
+            target="_blank"
+          >
+            Terms & Conditions
+          </a>
+        </li>
+        <li
+          class="listItem"
+        >
+          <a
+            href="https://support.kilt.io/"
+            rel="noreferrer"
+            role="menuitem"
+            tabindex="-1"
+            target="_blank"
+          >
+            Tech Support
+          </a>
+        </li>
+        <li
+          class="listItem"
+        >
+          <a
+            href="/access"
+            role="menuitem"
+            tabindex="-1"
+          >
+            Toggle Website Access
+          </a>
+        </li>
+        <li
+          class="listItem"
+        >
+          <a
+            href="/settings"
+            role="menuitem"
+            tabindex="-1"
+          >
+            Custom Endpoint
+          </a>
+        </li>
+        <li
+          class="listItem"
+        >
+          <a
+            role="menuitem"
+            tabindex="-1"
+          >
+            Version 2023.1.23
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Settings should render 1`] = `
+<div>
+  <div
+    class="wrapper"
+  >
+    <button
+      aria-expanded="false"
+      aria-haspopup="true"
+      aria-label="Settings"
+      class="toggle"
+      role="button"
+      tabindex="0"
+      title="Settings"
+      type="button"
+    />
+  </div>
+</div>
+`;
+
+exports[`Settings should render the endpoint item in the internal build 1`] = `
+<div>
+  <div
+    class="wrapper"
+  >
+    <button
+      aria-expanded="true"
+      aria-haspopup="true"
+      aria-label="Settings"
+      class="toggle"
+      role="button"
+      tabindex="0"
+      title="Settings"
+      type="button"
+    />
+    <div
+      class="dropdown"
+      role="menu"
+    >
+      <h4
+        class="heading"
+      >
+        Settings
+      </h4>
+      <ul
+        class="list"
+      >
+        <li
+          class="listItem"
+        >
+          <a
+            href="https://www.sporran.org/terms"
+            rel="noreferrer"
+            role="menuitem"
+            tabindex="-1"
+            target="_blank"
+          >
+            Terms & Conditions
+          </a>
+        </li>
+        <li
+          class="listItem"
+        >
+          <a
+            href="https://support.kilt.io/"
+            rel="noreferrer"
+            role="menuitem"
+            tabindex="-1"
+            target="_blank"
+          >
+            Tech Support
+          </a>
+        </li>
+        <li
+          class="listItem"
+        >
+          <a
+            href="/access"
+            role="menuitem"
+            tabindex="-1"
+          >
+            Toggle Website Access
+          </a>
+        </li>
+        <li
+          class="listItem"
+        >
+          <a
+            href="/settings"
+            role="menuitem"
+            tabindex="-1"
+          >
+            Custom Endpoint
+          </a>
+        </li>
+        <li
+          class="listItem"
+        >
+          <a
+            role="menuitem"
+            tabindex="-1"
+          >
+            Version 2023.1.23
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+`;

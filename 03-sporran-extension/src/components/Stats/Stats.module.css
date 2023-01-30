@@ -1,0 +1,10 @@
+.stats {
+  composes: smallText from '../Typography/Typography.module.css';
+  position: absolute;
+  bottom: 0;
+  align-self: center;
+}
+
+.balance {
+  color: var(--color-lightest);
+}

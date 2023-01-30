@@ -1,0 +1,37 @@
+name: Packages the public version
+on: workflow_dispatch
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      VARIANT: public
+    steps:
+      - name: Checkout the code
+        uses: actions/checkout@v3
+
+      - name: Configure Node and package manager
+        uses: actions/setup-node@v3
+        with:
+          node-version-file: 'package.json'
+          cache: 'yarn'
+
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile
+
+      - name: Build code
+        run: yarn build
+
+      - name: Package extension
+        run: yarn package
+
+      - name: Rename artifact as public
+        run: cd dist/web-ext-artifacts/ && mv * $(ls | sed 's/-/-public-/')
+
+      - name: Add sources
+        run: zip -r dist/web-ext-artifacts/sporran-sources.zip $(ls --almost-all) -x 'dist/*' '.git/*' 'node_modules/*'
+
+      - name: Publish on GitHub
+        uses: actions/upload-artifact@v3
+        with:
+          name: sporran-extension-${{ github.sha }}
+          path: dist/web-ext-artifacts/*

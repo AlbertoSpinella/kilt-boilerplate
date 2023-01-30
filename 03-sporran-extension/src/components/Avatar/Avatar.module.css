@@ -1,0 +1,21 @@
+.avatar {
+  width: calc(84rem / 16);
+  height: calc(84rem / 16);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: rgb(var(--color-white-rgb) / 30%) no-repeat;
+}
+
+.identicon {
+  --size: calc(72% / 84 * 100);
+
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+}
+
+.fullDid {
+  background: rgb(var(--color-orange-rgb) / 60%) no-repeat;
+}

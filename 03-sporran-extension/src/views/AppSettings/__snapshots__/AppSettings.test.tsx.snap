@@ -1,0 +1,90 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AppSettings should render 1`] = `
+<div>
+  <form
+    class="container"
+  >
+    <h1
+      class="heading"
+    >
+      Set Custom Endpoint
+    </h1>
+    <p
+      class="subline"
+    />
+    <p
+      class="subline"
+    >
+      When changing the endpoint, the extension needs to close.
+Just start it again to continue.
+    </p>
+    <p
+      class="subline"
+    >
+      Attention: connecting to a malicious endpoint may expose your Identities.
+    </p>
+    <p
+      class="endpointLine"
+    >
+      <datalist
+        id="endpoints"
+      >
+        <option
+          value="wss://kilt-rpc.dwellir.com"
+        />
+        <option
+          value="wss://spiritnet.kilt.io"
+        />
+        <option
+          value="wss://peregrine.kilt.io/parachain-public-ws"
+        />
+        <option
+          value="wss://peregrine-stg.kilt.io/para"
+        />
+        <option
+          value="wss://sporran-testnet.kilt.io"
+        />
+      </datalist>
+      <select
+        aria-label="Custom endpoint"
+        class="endpoint"
+        name="endpoint"
+      >
+        <option
+          label="Dwellir"
+          value="wss://kilt-rpc.dwellir.com"
+        />
+        <option
+          label="BOTLabs Trusted Entity"
+          value="wss://spiritnet.kilt.io"
+        />
+      </select>
+      <button
+        aria-label="Save"
+        class="save"
+        title="Save"
+        type="submit"
+      />
+      <a
+        aria-label="Cancel"
+        class="cancel"
+        href="/"
+        title="Cancel"
+      />
+    </p>
+    <button
+      class="reset"
+      type="button"
+    >
+      Restore Default
+    </button>
+    <button
+      aria-label="Back"
+      class="linkBack"
+      title="Back"
+      type="button"
+    />
+  </form>
+</div>
+`;

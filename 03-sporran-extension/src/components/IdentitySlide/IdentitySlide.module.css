@@ -1,0 +1,52 @@
+.container {
+  width: 100%;
+}
+
+.nameLine {
+  composes: identityText from '../Typography/Typography.module.css';
+  position: relative;
+  padding-left: 2.125rem;
+  height: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.375rem;
+}
+
+.centeredNameLine {
+  composes: nameLine;
+  padding-left: 0;
+}
+
+.name {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.input {
+  composes: inputName from '../Input/Input.module.css';
+  width: calc(232rem / 16);
+  margin: 1rem 0;
+}
+
+.save {
+  composes: buttonCheckmark from '../Button/Button.module.css';
+}
+
+.cancel {
+  composes: buttonCross from '../Button/Button.module.css';
+}
+
+.add {
+  composes: avatar from '../../components/Avatar/Avatar.module.css';
+  background: rgb(var(--color-black-rgb) / 30%) url('../images/plus-circle.svg') no-repeat center/100%;
+  border-radius: 50%;
+  margin-bottom: 1.625rem;
+}

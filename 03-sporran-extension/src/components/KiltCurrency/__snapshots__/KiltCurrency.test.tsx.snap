@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`KiltCurrency should render 1`] = `
+<div>
+  <span
+    aria-label="KILT Coin"
+    class="coin"
+  />
+</div>
+`;

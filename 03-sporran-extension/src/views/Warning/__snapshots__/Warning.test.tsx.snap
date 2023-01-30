@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Warning should render 1`] = `
+<div>
+  <div
+    class="container"
+  >
+    <h1
+      class="heading"
+    >
+      Attention!
+    </h1>
+    <h2
+      class="important"
+    >
+      The next step is very important!
+    </h2>
+    <p
+      class="info"
+    >
+      Please write down your wallet’s phrase and keep it in a safe place. We recommend that you write down your backup phrase with pen and paper. The phrase is required to restore your Identity.
+    </p>
+    <h2
+      class="important"
+    >
+      Keep it safe, so you don’t lose
+your assets
+    </h2>
+    <a
+      class="confirm"
+      href="/identity/create/backup"
+    >
+      I understand this – go to the phrase
+    </a>
+    <a
+      class="cancel"
+      href="/"
+    >
+      Cancel
+    </a>
+    <button
+      aria-label="Back"
+      class="linkBack"
+      title="Back"
+      type="button"
+    />
+  </div>
+</div>
+`;

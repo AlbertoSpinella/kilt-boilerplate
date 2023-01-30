@@ -1,0 +1,31 @@
+.checkbox {
+  display: none;
+}
+
+.checkbox + * {
+  --size: 1.25em;
+
+  width: var(--size);
+  height: var(--size);
+  vertical-align: middle;
+  display: inline-block;
+  border: 0.125em solid var(--color-grey-light);
+  border-radius: 0.375em;
+  background: linear-gradient(#547099 0%, #304765 45%, #0a1b2f 100%);
+  box-shadow: inset 1px 1px 1px 0 rgb(var(--color-black-rgb) / 20%);
+  position: relative;
+  cursor: pointer;
+}
+
+.checkbox:checked + *::after {
+  --tick-size: calc(var(--size) * 1.25);
+
+  width: var(--tick-size);
+  height: var(--tick-size);
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  content: ' ';
+  background: url('../images/checkmark-bold.svg') no-repeat center/var(--tick-size);
+}
