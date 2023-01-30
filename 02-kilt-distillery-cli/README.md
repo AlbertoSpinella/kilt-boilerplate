@@ -1,5 +1,6 @@
 # kilt-distillery-cli
 CLI tool to help devs quickly accomplish commons tasks and get started with project recipes
+Reference: https://github.com/KILTprotocol/kilt-distillery-cli
 
 ## disclaimer
 This tool is in beta and intended to ease development efforts, not as a replacement for production code. 

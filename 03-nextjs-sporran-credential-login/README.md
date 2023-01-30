@@ -1,6 +1,7 @@
 # Web3 Verification Credential Login
 
 The following code is example code and requires the user to add business logic and security to the application.
+Reference: https://github.com/KILTprotocol/nextjs-sporran-credential-login
 
 The flow from the application
 
