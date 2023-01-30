@@ -42,6 +42,8 @@ The following instructions comes from [this link](https://hackmd.io/@dTGKTsAWSxi
 cd ../03-sporran-extension
 yarn install && yarn dev
 ```
+ - Import the extension, depending on your browser:
+ 
 <details><summary>Chrome</summary>
 <ul>
 <li>Visit <code>chrome://extensions</code></li>
