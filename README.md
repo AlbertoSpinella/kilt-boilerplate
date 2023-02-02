@@ -28,7 +28,7 @@ yarn start
 - Answer `yes` to the question `auto renew the JWT?`
 - Select `peregrine testnet`
 - Select `generate a new mnemonic`
-- Answer `http://localhost:3000` to the question `enter origin`
+- Answer `http://localhost:xxxx`, where `xxxx` is the FE port, to the question `enter origin`
 - Follow the instructions: visit the faucet link and request tokens, then wait for the distillery to automatically fetch the availability
 - Select `yes` to the question `Create a test Claimer w/Credential?`
 - Follow the instructions: visit the faucet link and request tokens, then wait for the distillery to automatically fetch the availability
