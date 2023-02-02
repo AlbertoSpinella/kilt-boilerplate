@@ -1,6 +1,7 @@
 # KILT boilerplate
 
 This repo intends to create and run a working boilerplate for logging in using KILT credentials.
+
 NOTE: `01-attester-claimer-verifier` intends to [follow this guide](https://docs.kilt.io/docs/develop/workshop/welcome) and is independent from `02`, `03` and `04`.
 
 ## Index
