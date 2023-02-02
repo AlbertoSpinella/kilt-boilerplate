@@ -7,6 +7,8 @@ import {
   PubSubSessionV2,
 } from '../types/types'
 
+const endpoint = "/api";
+
 export default function useSporran() {
   const [sporran, setSporran] =
     useState<InjectedWindowProvider<PubSubSessionV1 | PubSubSessionV2>>(null)
@@ -21,7 +23,7 @@ export default function useSporran() {
     if (!sessionObject) throw Error('startSession first')
 
     const { sessionId } = sessionObject
-    const result = await fetch(`/api/verify?sessionId=${sessionId}`, {
+    const result = await fetch(`${endpoint}/verify?sessionId=${sessionId}`, {
       method: 'GET',
     })
 
@@ -36,11 +38,11 @@ export default function useSporran() {
     await sessionObject.session.send(encryptedMessage)
 
     sessionObject.session.listen(async (message) => {
-      const result = await fetch('/api/verify', {
+      const result = await fetch(`${endpoint}/verify`, {
         credentials: 'include',
         method: 'POST',
         headers: {
-          ContentType: 'application/json',
+          "Content-Type": 'application/json',
           Accept: 'application/json',
         },
         body: JSON.stringify({ sessionId, message }),
@@ -52,7 +54,9 @@ export default function useSporran() {
 
   async function startSession() {
     setWaiting(true)
-    const values = await fetch('/api/session')
+    const values = await fetch(`${endpoint}/session`, {
+      mode: "cors"
+    })
 
     if (!values.ok) throw Error(values.statusText)
 
@@ -65,12 +69,14 @@ export default function useSporran() {
       challenge
     )
 
-    const valid = await fetch('/api/session', {
+    const valid = await fetch(`${endpoint}/session`, {
       credentials: 'include',
       method: 'POST',
+      mode: "cors",
       headers: {
-        ContentType: 'application/json',
+        "Content-Type": 'application/json',
         Accept: 'application/json',
+        "Access-Control-Allow-Credentials": "true"
       },
       body: JSON.stringify({ ...session, sessionId }),
     })
@@ -98,6 +104,7 @@ export default function useSporran() {
         {},
         {
           set(target, prop, value) {
+            console.log("PROP", prop);
             if (prop === 'sporran') {
               setSporran(value)
             }
