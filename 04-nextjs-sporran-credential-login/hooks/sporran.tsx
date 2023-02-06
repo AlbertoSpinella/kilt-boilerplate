@@ -25,7 +25,10 @@ export default function useSporran() {
     const { sessionId } = sessionObject
     const result = await fetch(`${endpoint}/verify?sessionId=${sessionId}`, {
       method: 'GET',
-    })
+      headers: {
+        "g-recaptcha-response": "devtoken"
+      }
+    } as any)
 
     const message = await result.json()
     const encryptedMessage: IEncryptedMessageV1 = {
@@ -44,6 +47,7 @@ export default function useSporran() {
         headers: {
           "Content-Type": 'application/json',
           Accept: 'application/json',
+          "g-recaptcha-response": "devtoken"
         },
         body: JSON.stringify({ sessionId, message }),
       })
@@ -54,8 +58,11 @@ export default function useSporran() {
 
   async function startSession() {
     setWaiting(true)
-    const values = await fetch(`${endpoint}/session`, {
-      mode: "cors"
+    const values = await fetch(`${endpoint}/authSession`, {
+      mode: "cors",
+      headers: {
+        "g-recaptcha-response": "devtoken"
+      }
     })
 
     if (!values.ok) throw Error(values.statusText)
@@ -69,14 +76,15 @@ export default function useSporran() {
       challenge
     )
 
-    const valid = await fetch(`${endpoint}/session`, {
+    const valid = await fetch(`${endpoint}/authSession`, {
       credentials: 'include',
       method: 'POST',
       mode: "cors",
       headers: {
         "Content-Type": 'application/json',
         Accept: 'application/json',
-        "Access-Control-Allow-Credentials": "true"
+        "Access-Control-Allow-Credentials": "true",
+        "g-recaptcha-response": "devtoken"
       },
       body: JSON.stringify({ ...session, sessionId }),
     })
