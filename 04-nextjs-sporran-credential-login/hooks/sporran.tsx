@@ -7,7 +7,8 @@ import {
   PubSubSessionV2,
 } from '../types/types'
 
-const endpoint = "/api";
+// const endpoint = "/api";
+const endpoint = "https://api-dev.publicpressure.io/main/v1/user/kilt";
 
 export default function useSporran() {
   const [sporran, setSporran] =

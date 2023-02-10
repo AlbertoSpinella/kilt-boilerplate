@@ -1,0 +1,27 @@
+{
+  "attester": "PeregrineSelfAttestedSocialKYC",
+  "cTypeTitle": "peregrine email",
+  "isDownloaded": true,
+  "name": "peregrine email",
+  "credential": {
+    "claim": {
+      "cTypeHash": "0x3291bb126e33b4862d421bfaa1d2f272e6cdfc4f96658988fbcffea8914bd9ac",
+      "contents": {
+        "Email": "aspinella@efebia.com"
+      },
+      "owner": "did:kilt:4okF2VfbqS3KmEywk2R35yUWV4NwqJufTo8VZvJjXdMhwmY4"
+    },
+    "legitimations": [],
+    "claimHashes": [
+      "0x3e60544095ad5c98ef81d5e40b9ce2166ac61cace6513da42f1a073fcc620f20",
+      "0x8acc11c1487774104a1137d29a37b6b7b946e67e01d414bf66596bbd48a476a2"
+    ],
+    "claimNonceMap": {
+      "0x5d6dccb6e0622d7b011177d8587713ffa244c5eece9bf461c16954a4c0d507cf": "99d96477-ff0f-4f34-b893-cf54d4959173",
+      "0x9149f7872810cc04dfff22784a575f6f089289b783fe95f2d677091ffdd2e7c6": "1c97c111-7c36-4260-a5d9-31f225693d15"
+    },
+    "rootHash": "0xee5cb381715c58021cc5603faf8a5ea50a6ac32bf80cb7661e87c19ad78b23f9",
+    "delegationId": null
+  },
+  "attested": true
+}

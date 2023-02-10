@@ -1,0 +1,30 @@
+{
+  "attester": "PeregrineSelfAttestedSocialKYC",
+  "cTypeTitle": "peregrine github",
+  "isDownloaded": true,
+  "name": "peregrine github",
+  "credential": {
+    "claim": {
+      "cTypeHash": "0xad52bd7a8bd8a52e03181a99d2743e00d0a5e96fdc0182626655fcf0c0a776d0",
+      "contents": {
+        "User ID": "",
+        "Username": ""
+      },
+      "owner": "did:kilt:4okF2VfbqS3KmEywk2R35yUWV4NwqJufTo8VZvJjXdMhwmY4"
+    },
+    "legitimations": [],
+    "claimHashes": [
+      "0x2740411e7b6aba0688de4923afe433f238bdc8caf0e84d76e79df58fc7bbcca4",
+      "0x9f7e9c5add76d1ccd11c066a19cc57d4254504b0c7915d8ef91a338eba0a9776",
+      "0xafbfe935c92dec240e8aa2bd38168c90e88439f96187faa8845026167c21b8ba"
+    ],
+    "claimNonceMap": {
+      "0x5d6dccb6e0622d7b011177d8587713ffa244c5eece9bf461c16954a4c0d507cf": "97e9fea6-caa2-4bd4-acb1-5a93e89cbf65",
+      "0x00713e2b2626208a275a9c25a19d22687a2ee11d136ade52982feb5e8100919d": "f1c9fc05-0555-462a-8c32-fb2047968635",
+      "0xdacfdb34bb7d48402d58b067896254bb02ac46c5f8e00ca8e486c00e1ffeed30": "6ab7e7bf-12e5-475c-b636-4d251ed44d3c"
+    },
+    "rootHash": "0x5e3f03777591f1729f005362d639f4257aef45610e756a7fdbe2e92e9b92a7eb",
+    "delegationId": null
+  },
+  "attested": true
+}
