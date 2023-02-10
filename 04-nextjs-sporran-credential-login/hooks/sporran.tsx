@@ -55,7 +55,7 @@ export default function useSporran() {
 
   async function startSession() {
     setWaiting(true)
-    const values = await fetch(`${endpoint}/session`, {
+    const values = await fetch(`${endpoint}/authSession`, {
       mode: "cors"
     })
 
@@ -70,7 +70,7 @@ export default function useSporran() {
       challenge
     )
 
-    const valid = await fetch(`${endpoint}/session`, {
+    const valid = await fetch(`${endpoint}/authSession`, {
       credentials: 'include',
       method: 'POST',
       mode: "cors",
