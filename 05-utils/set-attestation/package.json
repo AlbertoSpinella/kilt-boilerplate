@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "@kiltprotocol/core": "^0.31.1",
+    "@kiltprotocol/sdk-js": "^0.31.1",
+    "@polkadot/util-crypto": "^11.0.1"
+  }
+}
