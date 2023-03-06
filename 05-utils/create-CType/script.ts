@@ -1,4 +1,4 @@
-import { connect } from '@kiltprotocol/sdk-js';
+import { connect, disconnect } from '@kiltprotocol/sdk-js';
 
 import { ensureStoredCtype } from './generateCtype';
 import { getAccount, getKeypairs } from '../libs/utils';
@@ -8,10 +8,7 @@ const MNEMONIC = "one two three four five six seven eight nine ten eleven twelve
 const DID_ORIG = "did:kilt:did";
 
 const main = async () => {
-
-    try {
-        await connect(WSS_ADDRESS as string);
-    
+    try {    
         const account = await getAccount(MNEMONIC);
         const { assertion } = await getKeypairs(MNEMONIC);
 
@@ -26,4 +23,6 @@ const main = async () => {
     }
 };
 
+await connect(WSS_ADDRESS);
 main();
+await disconnect();

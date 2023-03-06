@@ -5,7 +5,10 @@ import {
 } from '@kiltprotocol/sdk-js';
 
 import { getAccount, getKeypairs, authenticationSigner } from '../libs/utils';
+import { connect } from 'http2';
+import { disconnect } from 'process';
 
+const WSS_ADDRESS = "wss://peregrine.kilt.io/parachain-public-ws";
 const mnemonic1 = "one two three four five six seven eight nine ten eleven twelve";
 const mnemonic2 = "thirteen fourteen fifteen sixteen seventeen eighteen nineteen twenty twentyone twentytwo twentythree twentyfour";
 const did1 = "did:kilt:did";
@@ -37,4 +40,6 @@ const main = async () => {
     }
 };
 
+await connect(WSS_ADDRESS);
 main();
+await disconnect();
