@@ -37,7 +37,7 @@ Once the extension is installed in your browser, you need to create an identity.
 ### 2.1. Sign the assetDID and make identity B act on behalf of identity A [developers]
 [Here is the reference repository](https://github.com/BTE-Trusted-Entity/asset-did-credentials). This repository uses the Sporran extension to sign AssetDIDs; Public Pressure automated this process for each NFT deployed on each chain.
 
-### 2.1.1. Make identity B act on behalf of identity A
+#### 2.1.1. Make identity B act on behalf of identity A
 The reason we need to make an identity B act on behalf of identity A (a "delegation" mechanism) is that if the identity gets compromised, at least this is a rotatable credential: identity A can revoke permissions to attest from identity B, and "delegate" to a newer identity C.
 - We need to set the assertion of identity B as the attestation key of identity A. Here is a sample snippet:
 ```javascript
