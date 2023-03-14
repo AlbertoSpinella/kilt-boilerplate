@@ -1,12 +1,12 @@
 import {
     Blockchain,
     ConfigService,
-    Did
+    Did,
+    connect,
+    disconnect
 } from '@kiltprotocol/sdk-js';
 
 import { getAccount, getKeypairs, authenticationSigner } from '../libs/utils';
-import { connect } from 'http2';
-import { disconnect } from 'process';
 
 const WSS_ADDRESS = "wss://peregrine.kilt.io/parachain-public-ws";
 const mnemonic1 = "one two three four five six seven eight nine ten eleven twelve";
