@@ -26,22 +26,22 @@ const main = async () => {
 
     const extrinsic = api.tx.did.setAttestationKey(pktc);
 
-    // const tx = await Did.authorizeTx(
-    //     did1,
-    //     extrinsic,
-    //     await authenticationSigner({
-    //         authentication: authentication1
-    //     }),
-    //     account.address
-    // );
+    const tx = await Did.authorizeTx(
+        did1,
+        extrinsic,
+        await authenticationSigner({
+            authentication: authentication1
+        }),
+        account.address
+    );
 
-    // try {
-    //     const result = await Blockchain.signAndSubmitTx(tx, account);
-    //     console.log({ result });
-    // } catch (error) {
-    //     console.log({ KILTerror: error });
-    //     return false;
-    // }
+    try {
+        const result = await Blockchain.signAndSubmitTx(tx, account);
+        console.log({ result });
+    } catch (error) {
+        console.log({ KILTerror: error });
+        return false;
+    }
 };
 
 connect(WSS_ADDRESS);
