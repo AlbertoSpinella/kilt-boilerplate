@@ -2,7 +2,8 @@
   "dependencies": {
     "@kiltprotocol/core": "^0.31.1",
     "@kiltprotocol/sdk-js": "^0.31.1",
-    "@polkadot/util-crypto": "^10.4.2"
+    "@polkadot/util-crypto": "^10.4.2",
+    "cbor": "^8.1.0"
   },
   "scripts": {
     "add-keyAgreement": "npx ts-node ./add-keyAgreement/script.ts",
