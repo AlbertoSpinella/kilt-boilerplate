@@ -1,7 +1,10 @@
 import {
     KiltKeyringPair,
     NewDidEncryptionKey,
-    Utils
+    Utils,
+    ConfigService,
+    Did,
+    Blockchain
 } from '@kiltprotocol/sdk-js';
 
 import { blake2AsU8a } from '@polkadot/util-crypto/blake2/asU8a';
@@ -56,10 +59,10 @@ export const getKeypairs = async (mnemonic: any): Promise<Keypairs> => {
 
 export const authenticationSigner = async ({
     authentication
-}) => {
+}: any) => {
     if (!authentication) throw new Error('no authentication key');
 
-    return async ({ data }) => ({
+    return async ({ data }: any) => ({
         signature: authentication.sign(data),
         keyType: authentication.type
     });

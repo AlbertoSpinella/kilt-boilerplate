@@ -1,0 +1,81 @@
+:root {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  margin-inline: calc((100% - min(90%, 1200rem / 16)) / 2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.didInput {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 1rem;
+  margin-block: 2rem;
+}
+
+.error {
+  color: red;
+}
+
+.didInputLabel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  overflow: hidden;
+}
+
+.didInputValue {
+  margin: 0.25rem 0 0;
+  min-width: 10rem;
+}
+
+.tokenID {
+  margin: 0;
+}
+
+.optional {
+  font-size: 0.75rem;
+  font-style: italic;
+}
+
+.output {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-block-start: 1px solid black;
+  padding-block-start: 1rem;
+  margin-block: 2rem;
+}
+
+.assetDidUri {
+  display: flex;
+  color: green;
+}
+
+.assetDidUriValue {
+  word-break: break-word;
+}
+
+.submit {
+  padding: 0.25rem 2rem;
+  cursor: pointer;
+}

@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "@kiltprotocol/core": "^0.31.1",
+    "@kiltprotocol/sdk-js": "^0.31.1",
+    "@polkadot/util-crypto": "^10.4.2"
+  },
+  "scripts": {
+    "add-keyAgreement": "npx ts-node ./add-keyAgreement/script.ts",
+    "create-CType": "npx ts-node ./create-CType/script.ts",
+    "set-attestation": "npx ts-node ./set-attestation/script.ts"
+  }
+}

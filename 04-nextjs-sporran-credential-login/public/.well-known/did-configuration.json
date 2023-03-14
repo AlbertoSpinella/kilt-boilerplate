@@ -6,25 +6,25 @@
                 "https://www.w3.org/2018/credentials/v1",
                 "https://identity.foundation/.well-known/did-configuration/v1"
             ],
-            "id": "kilt:cred:0x77034dffacc0493a0a81bfe1e6d403b8b5d83253f2d2fdb73c93b114ce8eff7d",
-            "issuer": "did:kilt:4oNLFa7eZAmGWaVJNAbv4MuZ1gS8rd4Xgyiv1hnRGt1ySxm3",
-            "issuanceDate": "2023-02-02T13:11:51.920Z",
-            "expirationDate": "2028-02-01T13:11:51.920Z",
+            "id": "kilt:cred:0xbcf336f07933241e8616ed2c4a576fb571cdfbb5c6fbc474562af72a18ddfc76",
+            "issuer": "did:kilt:4tUmcN7RLCtTUXSPptssqLo2rLPWgjn8BvLbYgyxPANZXusY",
+            "issuanceDate": "2023-03-07T15:12:15.034Z",
+            "expirationDate": "2028-03-05T15:12:15.034Z",
             "type": [
                 "VerifiableCredential",
                 "DomainLinkageCredential",
                 "KiltCredential2020"
             ],
             "credentialSubject": {
-                "id": "did:kilt:4oNLFa7eZAmGWaVJNAbv4MuZ1gS8rd4Xgyiv1hnRGt1ySxm3",
+                "id": "did:kilt:4tUmcN7RLCtTUXSPptssqLo2rLPWgjn8BvLbYgyxPANZXusY",
                 "origin": "http://localhost:5000",
-                "rootHash": "0x77034dffacc0493a0a81bfe1e6d403b8b5d83253f2d2fdb73c93b114ce8eff7d"
+                "rootHash": "0xbcf336f07933241e8616ed2c4a576fb571cdfbb5c6fbc474562af72a18ddfc76"
             },
             "proof": {
                 "type": "KILTSelfSigned2020",
                 "proofPurpose": "assertionMethod",
-                "verificationMethod": "did:kilt:4oNLFa7eZAmGWaVJNAbv4MuZ1gS8rd4Xgyiv1hnRGt1ySxm3#0x6e5bf3f8a62f63ad0e165e72d4901cd248ab2942a39824c58309097277c893cc",
-                "signature": "0x0c05cfc210d5c9b195e37143875491dd2ac46cd69cf8456875d3556d7733261d35c227251100a701cf99ced0219e46171e8c60910c7b373034f404ec3e51778b"
+                "verificationMethod": "did:kilt:4tUmcN7RLCtTUXSPptssqLo2rLPWgjn8BvLbYgyxPANZXusY#0x27ae120b5d25ade6977cad0ae429334dce93b8ad8d10906c0d1052d4716db621",
+                "signature": "0x86d9ad602a50b727bb2f9a5fe6839bf40f62a5671dab915dfd0c9f4587e0ed79796ccd5a479e992c63635a5cc20035d84d083532174f47d8d2df269aa8a2a78b"
             }
         }
     ]

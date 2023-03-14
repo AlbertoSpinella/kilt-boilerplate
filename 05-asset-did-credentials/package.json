@@ -1,0 +1,69 @@
+{
+  "name": "asset-did-credentials",
+  "version": "1.0.0",
+  "repository": "git@github.com:BTE-Trusted-Entity/asset-did-credentials.git",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=v16.18.1"
+  },
+  "scripts": {
+    "dev": "parcel --open",
+    "build": "parcel build",
+    "test": "tsc --noEmit",
+    "lint": "yarn run lint-css && yarn run lint-js",
+    "lint-js": "eslint --max-warnings 0 --config ./.eslintrc.json \"src/**/*.ts*\"",
+    "lint-css": "stylelint \"src/**/*.css\"",
+    "fix-css": "stylelint --fix \"src/**/*.css\"",
+    "css": "tcm --pattern 'src/**/*.module.css' && eslint --fix --config ./.eslintrc.json \"src/**/*.css.d.ts\"",
+    "prettify": "prettier --write \"src/**/*.ts*\""
+  },
+  "dependencies": {
+    "@kiltprotocol/asset-did": "0.31.0",
+    "@kiltprotocol/chain-helpers": "0.31.0",
+    "@kiltprotocol/config": "0.31.0",
+    "@kiltprotocol/core": "0.31.0",
+    "@kiltprotocol/types": "0.31.0",
+    "@polkadot/extension-dapp": "^0.44.8",
+    "lodash-es": "^4.17.21",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/lodash-es": "^4.17.6",
+    "@types/react": "^18.0.25",
+    "@types/react-dom": "^18.0.11",
+    "@typescript-eslint/eslint-plugin": "^5.44.0",
+    "@typescript-eslint/parser": "^5.44.0",
+    "buffer": "^5.5.0",
+    "eslint": "^8.28.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.31.11",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "events": "^3.1.0",
+    "parcel": "2.7.0",
+    "prettier": "^2.8.0",
+    "process": "^0.11.10",
+    "stream-browserify": "^3.0.0",
+    "stylelint": "^14.16.0",
+    "stylelint-config-css-modules": "^4.1.0",
+    "stylelint-config-standard": "^29.0.0",
+    "typed-css-modules": "^0.7.2",
+    "typescript": "^4.9.3",
+    "typescript-plugin-css-modules": "^4.1.1"
+  },
+  "resolutions": {
+    "terser": "5.16.1"
+  },
+  "targets": {
+    "default": {
+      "source": "src/index.html",
+      "distDir": "dist",
+      "engines": {
+        "browsers": "last 2 Chrome versions, last 2 Firefox versions"
+      }
+    }
+  }
+}

@@ -20,26 +20,30 @@ const main = async () => {
 
     const account = await getAccount(mnemonic2);
 
-    const extrinsic = api.tx.did.setAttestationKey(Did.publicKeyToChain(assertion2));
+    const pktc = Did.publicKeyToChain(assertion2);
 
-    const tx = await Did.authorizeTx(
-        did1,
-        extrinsic,
-        await authenticationSigner({
-            authentication: authentication1
-        }),
-        account.address
-    );
+    console.log();
 
-    try {
-        const result = await Blockchain.signAndSubmitTx(tx, account);
-        console.log({ result });
-    } catch (error) {
-        console.log({ KILTerror: error });
-        return false;
-    }
+    const extrinsic = api.tx.did.setAttestationKey(pktc);
+
+    // const tx = await Did.authorizeTx(
+    //     did1,
+    //     extrinsic,
+    //     await authenticationSigner({
+    //         authentication: authentication1
+    //     }),
+    //     account.address
+    // );
+
+    // try {
+    //     const result = await Blockchain.signAndSubmitTx(tx, account);
+    //     console.log({ result });
+    // } catch (error) {
+    //     console.log({ KILTerror: error });
+    //     return false;
+    // }
 };
 
-await connect(WSS_ADDRESS);
+connect(WSS_ADDRESS);
 main();
-await disconnect();
+disconnect();
